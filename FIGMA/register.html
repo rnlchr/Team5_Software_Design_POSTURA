@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Figma Landing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="login-frame">
+        <main class="auth-panel">
+          <div class="auth-logo-wrapper">
+            <div class="auth-logo-circle">
+              <img src="logo.png" alt="Postura logo" class="auth-logo-img" />
+            </div>
+          </div>
+          <h1 class="auth-title">REGISTER AN ACCOUNT</h1>
+
+          <section class="card form-card" aria-label="Register form">
+            <form class="form" id="register-form" autocomplete="off">
+              <div class="field">
+                <label for="username" class="field-label">Username</label>
+                <div class="field-input">
+                  <input
+                    id="username"
+                    name="username"
+                    type="text"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="email" class="field-label">Email</label>
+                <div class="field-input">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="password" class="field-label">Password</label>
+                <div class="field-input">
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="button-row primary-row">
+                <button type="submit" class="btn btn-primary">
+                  <span>Register</span>
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <div class="button-row secondary-row secondary-row--below">
+            <a href="index.html" class="btn btn-outline" style="text-decoration: none;">
+              <span>Already have an account? Login</span>
+            </a>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
+
