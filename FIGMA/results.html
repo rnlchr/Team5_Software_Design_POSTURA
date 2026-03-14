@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results | Postura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Contrail+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles-home.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="frame">
+      <header class="top-bar">
+        <div class="logo-circle" aria-label="Postura logo">
+          <img src="logo.png" alt="Postura logo" class="logo-img" />
+        </div>
+
+        <nav class="tabs" aria-label="Main navigation">
+          <a href="home.html" class="tab">Home</a>
+          <a href="records.html" class="tab">Records</a>
+          <a href="faq.html" class="tab">FaQ</a>
+          <a href="about.html" class="tab">About Us</a>
+        </nav>
+
+        <hr class="divider" />
+      </header>
+
+      <main>
+        <section class="results-page">
+          <div class="results-image-wrapper">
+            <img
+              id="result-image"
+              src=""
+              alt="Uploaded posture"
+              class="results-image"
+            />
+          </div>
+          <div class="results-info">
+            <h1 class="results-title">Posture Analysis Result</h1>
+            <p>
+              <strong>Condition:</strong>
+              <span id="result-label">-</span>
+            </p>
+            <p>
+              <strong>Confidence:</strong>
+              <span id="result-confidence">-</span>
+            </p>
+            <p><strong>Recommendation:</strong></p>
+            <p id="result-recommendation" class="results-note">-</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+

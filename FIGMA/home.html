@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles-home.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="frame">
@@ -41,7 +42,7 @@
 
           <div class="hero-copy">
             <h1 class="brand-title">POSTURA</h1>
-            <button class="btn hero-cta" type="button">
+            <button class="btn hero-cta" type="button" id="upload-btn">
               <span>UPLOAD PHOTO</span>
             </button>
             <p class="brand-tagline">
@@ -49,6 +50,13 @@
             </p>
           </div>
         </section>
+
+        <input
+          type="file"
+          id="postura-file"
+          accept="image/*"
+          style="display: none"
+        />
 
         <section class="about">
           <div class="about-image"></div>

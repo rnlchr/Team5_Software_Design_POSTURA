@@ -1,0 +1,449 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.frame {
+  width: 100%;
+  max-width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #ffffff;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  animation: page-fade-in 500ms ease-out;
+}
+
+.top-bar {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 115px;
+  background-color: #222222;
+}
+
+.logo-circle {
+  position: absolute;
+  left: calc(50% - 720px + 30px);
+  top: 16px;
+  width: 80px;
+  height: 73px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tabs {
+  position: absolute;
+  left: calc(50% - 720px + 134px);
+  top: 32px;
+  display: flex;
+}
+
+.tab {
+  padding: 4px 12px;
+  height: 57px;
+  min-width: 121px;
+  border: 0;
+  border-bottom: 1px solid #555555;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f5f5f5;
+  cursor: pointer;
+  transition: color 150ms ease-out, border-bottom-color 150ms ease-out,
+    transform 120ms ease-out;
+}
+
+.tab.is-active {
+  border-bottom-color: #ffffff;
+  color: #ffffff;
+}
+
+.tab:hover {
+  transform: translateY(-1px);
+}
+
+.divider {
+  position: absolute;
+  left: 50%;
+  top: 115px;
+  transform: translateX(-50%);
+  width: 100vw;
+  border: none;
+  border-top: 1px solid #111111;
+  margin: 0;
+}
+
+.hero-image-wrapper {
+  position: absolute;
+  left: 1237px;
+  top: -28px;
+  width: 175px;
+  height: 157px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: hero-float 6s ease-in-out infinite alternate;
+}
+
+.hero-copy {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.brand-title {
+  position: absolute;
+  left: 545px;
+  top: 165px;
+  margin: 0;
+  font-family: "Contrail One", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 107px;
+  font-weight: 400;
+  line-height: 1;
+  color: #000000;
+}
+
+.hero-cta {
+  position: absolute;
+  left: 513px;
+  top: 295px;
+  width: 413px;
+  height: 89px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #2c2c2c;
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+  font-size: 34px;
+  cursor: pointer;
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out,
+    background-color 150ms ease-out, color 150ms ease-out;
+}
+
+.hero-cta span {
+  white-space: nowrap;
+}
+
+.hero-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.brand-tagline {
+  position: absolute;
+  left: 297px;
+  top: 410px;
+  margin: 0;
+  font-family: "Holtwood One SC", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 1;
+  color: #000000;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about {
+  position: absolute;
+  left: 81px;
+  top: 601px;
+  width: 1273px;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.about-image {
+  width: 506px;
+  height: 243px;
+  border-radius: 50px;
+  border: 1px solid #000000;
+  background-image: url("Images/Posture.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-heading {
+  margin: 0;
+  font-family: "Tiro Telugu", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 1;
+  color: #000000;
+}
+
+.about-text {
+  max-width: 707px;
+}
+
+.about-body {
+  margin: 0;
+  font-family: "Tiro Kannada", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.about-page {
+  position: absolute;
+  left: 160px;
+  top: 200px;
+  width: 1120px;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.about-page-logo {
+  width: 360px;
+  height: auto;
+  display: block;
+  border-radius: 0;
+}
+
+.about-page-logo-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-page-logo-title {
+  margin-top: 12px;
+  font-family: "Contrail One", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: #000000;
+}
+
+.about-page-logo-subtitle {
+  margin-top: 4px;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: #555555;
+}
+
+.about-page-text {
+  max-width: 720px;
+}
+
+.about-page-title {
+  margin: 0 0 24px 0;
+  font-size: 32px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.about-page-body {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.faq-page {
+  position: absolute;
+  left: 160px;
+  top: 180px;
+  width: 1120px;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.faq-title {
+  margin: 0 0 24px 0;
+  font-size: 32px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.faq-answer {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.results-page {
+  position: absolute;
+  left: 160px;
+  top: 180px;
+  width: 1120px;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.results-image-wrapper {
+  width: 420px;
+  height: 420px;
+  border-radius: 24px;
+  border: 1px solid #cccccc;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.results-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.results-info {
+  max-width: 580px;
+}
+
+.results-title {
+  margin: 0 0 16px 0;
+  font-size: 28px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.results-note {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.members-toggle {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid #2c2c2c;
+  background-color: #ffffff;
+  color: #2c2c2c;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+  z-index: 20;
+}
+
+.members-panel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 100vh;
+  background-color: #f7f7f7;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(-100%);
+  transition: transform 250ms ease-out;
+  padding: 80px 16px 16px;
+  box-sizing: border-box;
+  z-index: 19;
+}
+
+.members-panel.is-open {
+  transform: translateX(0);
+}
+
+.members-title {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.members-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.member-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.member-photo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #cccccc;
+}
+
+.member-name {
+  font-size: 14px;
+  color: #222222;
+}
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+

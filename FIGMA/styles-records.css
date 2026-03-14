@@ -1,0 +1,131 @@
+.records-table {
+  position: absolute;
+  left: 134px;
+  top: 203px;
+  width: 1170px;
+  height: 634px;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.records-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.records-title {
+  font-size: 21px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.records-page {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.records-page-label {
+  font-size: 20px;
+}
+
+.records-page-arrow {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.records-page-arrow:hover {
+  border-color: #000000;
+}
+
+.records-columns {
+  display: grid;
+  grid-template-columns: 1.1fr 1.6fr 1.9fr 1.1fr 0.9fr;
+  border-bottom: 1px solid #000000;
+  padding: 8px 0;
+  margin-bottom: 16px;
+  font-size: 21px;
+  color: #000000;
+}
+
+.records-col {
+  text-align: center;
+}
+
+.records-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1.6fr 1.9fr 1.1fr 0.9fr;
+  align-items: center;
+  border-bottom: 1px solid #000000;
+  padding: 16px 0;
+  font-size: 20px;
+  color: #000000;
+  transition: background-color 150ms ease-out, transform 120ms ease-out,
+    box-shadow 150ms ease-out;
+}
+
+.records-cell {
+  text-align: center;
+}
+
+.records-thumb {
+  width: 100px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: #d9d9d9;
+  border-radius: 4px;
+}
+
+.records-row:hover {
+  background-color: #f7f7f7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.tabs .tab {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 150ms ease-out, border-bottom-color 150ms ease-out,
+    transform 120ms ease-out;
+}
+
+.tabs .tab:hover {
+  transform: translateY(-1px);
+}
+
+.records-empty {
+  margin-top: 24px;
+  font-size: 16px;
+  color: #555555;
+  text-align: center;
+}
+
+.records-delete-btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #c62828;
+  background-color: #fbe9e7;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 150ms ease-out, color 150ms ease-out,
+    transform 120ms ease-out, box-shadow 150ms ease-out;
+}
+
+.records-delete-btn:hover {
+  background-color: #ffccbc;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
