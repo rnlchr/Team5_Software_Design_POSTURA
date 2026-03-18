@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Database (generated at runtime)
+postura.db
+
+# Large YOLO model files (downloaded at runtime on Render)
+yolov8n-pose.pt
+yolov8m-pose.pt
+yolov8l-pose.pt
+yolov8x-pose.pt
+
+# Dataset (too large for GitHub)
+data/
+
+# Model pickle files — upload these manually or via download script
+# Comment these out if you want to include them
+models/yolov8m/posture_classifier.pkl
+models/yolov8m/scaler.pkl
+models/yolov8m/label_encoder.pkl
+models/yolov8m/feature_selector.pkl
+models/yolov8l/posture_classifier.pkl
+models/yolov8l/scaler.pkl
+models/yolov8l/label_encoder.pkl
+models/yolov8l/feature_selector.pkl
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+*.log

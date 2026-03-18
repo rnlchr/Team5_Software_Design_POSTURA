@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: postura
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: SECRET_KEY
+        generateValue: true
+    disk:
+      name: postura-data
+      mountPath: /data
+      sizeGB: 1
