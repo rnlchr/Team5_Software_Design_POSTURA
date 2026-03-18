@@ -11,9 +11,9 @@ opencv-python-headless
 numpy
 imbalanced-learn
 gunicorn
-
-# CPU-only torch for Render (no GPU on free tier)
+ 
+# CPU-only torch — use latest available version
 --extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.6.0+cpu
-torchvision==0.21.0+cpu
-torchaudio==2.6.0+cpu
+torch==2.9.0+cpu
+torchvision
+ 
