@@ -1,4 +1,4 @@
-
+# Postura — Render deployment requirements
 flask
 flask-cors
 flask-sqlalchemy
@@ -12,7 +12,8 @@ numpy
 imbalanced-learn
 gunicorn
 
-
+# CPU-only torch for Render (no GPU on free tier)
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.6.0+cpu
 torchvision==0.21.0+cpu
+torchaudio==2.6.0+cpu
