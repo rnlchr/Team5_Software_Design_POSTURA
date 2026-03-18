@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const prevPageBtn         = document.getElementById("prev-page");
   const nextPageBtn         = document.getElementById("next-page");
 
-  const API = "http://127.0.0.1:5000";
+  const API = window.location.origin;
 
   // ── Register ─────────────────────────────────────────────────────
   if (registerForm) {
